@@ -1,316 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jean Leonardo - Portfólio Profissional</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
-</head>
-
-<body>
-
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="loading-overlay" id="loadingOverlay">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <div class="bg-pattern"></div>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo" id="logoText">JL</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#experience" class="nav-link">Experiências</a></li>
-                <li><a href="#certificates" class="nav-link">Certificações</a></li>
-                <li><a href="#contact" class="nav-link">Contatos</a></li>
-            </ul>
-            <button class="theme-switcher" id="themeSwitcher">
-                <span id="themeIcon">🌙</span>
-                <span>Tema</span>
-            </button>
-        </div>
+      <div class="nav-container">
+        <a href="#home" class="logo" id="logoText">JL</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#experience" class="nav-link">Experiências</a></li>
+          <li><a href="#certificates" class="nav-link">Certificações</a></li>
+          <li><a href="#contact" class="nav-link">Contatos</a></li>
+        </ul>
+        <button class="theme-switcher" id="themeSwitcher">
+          <span id="themeIcon">🌙</span>
+          <span>Tema</span>
+        </button>
+      </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-badge"><span>Disponível para Oportunidades</span></div>
-            <h1 class="hero-title" id="heroName">Jean Leonardo</h1>
-            <div class="hero-subtitle" id="heroTagline">Analista de logística</div>
-            <p class="hero-description" id="heroDescription">Gero eficiência operacional e inovação através de soluções
-                baseadas em dados.</p>
-            <div class="hero-cta">
-                <a href="#contact" class="cta-button cta-primary">
-                    <span>Agendar Reunião</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
-                    </svg>
-                </a>
-                <a href="#about" class="cta-button">
-                    <span>Ver Portfólio</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                </a>
-            </div>
+      <div class="hero-content">
+        <div class="hero-badge"><span>Disponível para Oportunidades</span></div>
+        <h1 class="hero-title" id="heroName">Jean Leonardo</h1>
+        <div class="hero-subtitle" id="heroTagline">
+          Profissional de logística
         </div>
+        <p class="hero-description" id="heroDescription">
+          Gero eficiência operacional e inovação através de soluções baseadas em
+          dados.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="cta-button cta-primary">
+            <span>Agendar Reunião</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+              />
+            </svg>
+          </a>
+          <a href="#about" class="cta-button">
+            <span>Ver Portfólio</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              />
+            </svg>
+          </a>
+          <a
+            href="CV Jean Leonardo 2026.pdf"
+            class="cta-button"
+            id="downloadResume"
+          >
+            <span>Baixar Currículo</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-mouse"></div>
+      </div>
     </section>
-
 
     <section id="about" class="section">
-        <div class="section-header">
-            <div class="section-badge">Perfil</div>
-            <h2 class="section-title">Sobre Mim</h2>
-            <p class="section-description">Analista de Logística </p>
+      <div class="section-header">
+        <div class="section-badge">Perfil</div>
+        <h2 class="section-title">Sobre Mim</h2>
+        <p class="section-description">Analista de Logística & Dados</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>
+            Profissional com experiência em logística e transportes, apaixonado
+            por desafios e por resolver problemas. Estou sempre em busca de
+            novos conhecimentos, atuando em torre de controle de logística e
+            e-commerce no first mile e last mile/Fulfillment partners, expertise
+            em monitoramento de KPIs em tempo real, programações de veículos e
+            roteirização de frotas, Gero eficiência operacional e inovação
+            através de soluções baseadas em dados.
+          </p>
+          <p>
+            Criei automações com Power Automate e Python que economizam horas de
+            trabalho por semana e reduzem erros.
+          </p>
+          <p>
+            Gosto de olhar os números, encontrar gargalos e propor soluções
+            simples que geram resultado rápido.
+          </p>
+          <p>
+            Meu foco é deixar a operação mais barata, mais rápida e mais
+            confiável usando dados e bom senso. Aberto a novas oportunidades em
+            logística, supply chain e análise de dados.
+          </p>
         </div>
-        <div class="about-content">
-            <div class="about-text reveal">
-                <p>Profissional com experiência em logística e transportes, apaixonado por desafios e por resolver
-                    problemas.
-                    Estou sempre em busca de novos conhecimentos, atuando em torre de controle de logística e e-commerce
-                    no first mile e last mile/Fulfillment partners,
-                    expertise em monitoramento de KPIs em tempo real, programações de veículos e roteirização
-                    de frotas, Gero eficiência operacional e inovação através de soluções baseadas em dados.
-                </p>
-
-                <p>Criei automações com Power Automate e Python que economizam horas de trabalho por semana e reduzem
-                    erros.</p>
-
-                <P>Gosto de olhar os números, encontrar gargalos e propor soluções simples que geram resultado rápido.
-                </P>
-
-                <p>Meu foco é deixar a operação mais barata, mais rápida e mais confiável usando dados e bom senso.
-                    Aberto a novas oportunidades em logística, supply chain e análise de dados.”
-                </p>
-            </div>
-            <div class="about-metrics reveal">
-                <div class="metric-card"><span class="metric-number">Torre de controle de Logística</span><span
-                        class="metric-label">
-                    </span></div>
-                <div class="metric-card"><span class="metric-number">E-commerce</span><span class="metric-label">
-                    </span></div>
-                <div class="metric-card"><span class="metric-number">Roteirização de Frotas</span><span
-                        class="metric-label">
-                    </span></div>
-                <div class="metric-card"><span class="metric-number">Analise de Dados</span><span class="metric-label">
-                    </span></div>
-            </div>
+        <div class="about-metrics reveal">
+          <div class="metric-card">
+            <span class="metric-number">Torre de controle de Logística</span
+            ><span class="metric-label"></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">E-commerce</span
+            ><span class="metric-label"></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">Roteirização de Frotas</span
+            ><span class="metric-label"></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">Análise de Dados</span
+            ><span class="metric-label"></span>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <section id="experience" class="section">
-        <div class="section-header">
-            <div class="section-badge">Trajetória Profissional</div>
-            <h2 class="section-title">Experiências Profissionais</h2>
-            <p class="section-description">Uma jornada em Logística e Tecnológica, gerando soluções baseadas em dados
-            </p>
-        </div>
-        <div class="experience-timeline">
-            <div class="timeline-line"></div>
-            <div class="timeline-item reveal">
-                <div class="timeline-content">
-                    <h3 class="timeline-role">Assistente de logística JR</h3>
-                    <div class="timeline-company">Moby</div>
-                    <div class="timeline-period">Novembro 2023 - Setembro 2024</div>
-                    <p class="timeline-description">• Monitoramento Inbound: acompanhamento em tempo real de frotas via
-                        ERP, contato direto com transportadoras, registro de ocorrências e extração de relatórios de
-                        KPIs.</p>
-                    <br>
-                    <p>• Estadia Inbound: análise de tempo de permanência de veículos vs. programado, validação e
-                        aprovação de relatórios.</p>
-                    <br>
-                    <p>• Programação Inbound: apoio no agendamento de veículos em portais de fornecedores e follow-up de
-                        SLA semanal.</p>
-                </div>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-content">
-                    <h3 class="timeline-role">Alimentador de linha de produção</h3>
-                    <div class="timeline-company">LY do brasil </div>
-                    <div class="timeline-period">Maio 2023 - Setembro 2023</div>
-                    <p class="timeline-description">• Limpeza automática e manual de moldes de máquinas de pneus,
-                        controle de robôs de limpeza e check-up de processos.</p>
-                </div>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-content">
-                    <h3 class="timeline-role">Assistente de logística</h3>
-                    <div class="timeline-company">J&T express</div>
-                    <div class="timeline-period">Outubro 2022 - Dezembro 2022</div>
-                    <p class="timeline-description">• Expedição e Recebimento: separação, conferência e bipagem de
-                        encomendas, elaboração de romaneios, carregamento/descarregamento.</p>
-                    <br>
-                    <p>•Roterização de encomendas e monitoramento de entregas last-mile.</p>
+      <div class="section-header">
+        <div class="section-badge">Trajetória Profissional</div>
+        <h2 class="section-title">Experiências Profissionais</h2>
+        <p class="section-description">
+          Uma jornada em Logística e Tecnologia, gerando soluções baseadas em
+          dados
+        </p>
+      </div>
+      <div class="experience-timeline">
+        <div class="timeline-line"></div>
 
-                </div>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-content">
-                    <h3 class="timeline-role">Auxiliar de logística</h3>
-                    <div class="timeline-company">Shopee</div>
-                    <div class="timeline-period">Março 2022 - Setembro 2022</div>
-                    <p class="timeline-description">• Recebimento e conferência de produtos, bipagem no ERP, montagem de
-                        paletes e organização por destino (FIFO).</p>
-                    <br>
-                    <p>• Expedição: apoio no carregamento/descarregamento, emissão de romaneios, controle de qualidade e
-                        gestão de produtos avariados/devolvidos.</p>
-                </div>
-            </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h3 class="timeline-role">Analista de Logística</h3>
+            <div class="timeline-company">Shopee Xpress | Campinas/SP</div>
+            <div class="timeline-period">Atual momento</div>
+            <p class="timeline-description">
+              • Análise do Fulfillment no Middle Mile: Controle do Line Haul e
+              gestão do Backlog do hub.<br />
+              • Gestão de Recursos e Demanda: Controle de insumos
+              (materiais/recursos) e monitoramento de pedidos.<br />
+              • Resolução de Problemas Operacionais: Atuação focada na
+              eliminação de gargalos e normalização do fluxo.<br />
+              • Programação de Veículos: Análise e otimização das agendas nos
+              setores de expedição e recebimento.<br />
+              • Melhoria Contínua e Layout: Adaptação de layout visando ganhos
+              de eficiência operacional.<br />
+              • Análise de Performance: Avaliação crítica dos indicadores de
+              performance do fulfillment.
+            </p>
+          </div>
         </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h3 class="timeline-role">Assistente de logística JR</h3>
+            <div class="timeline-company">Moby</div>
+            <div class="timeline-period">Novembro 2023 - Setembro 2024</div>
+            <p class="timeline-description">
+              • Monitoramento Inbound: acompanhamento em tempo real de frotas
+              via ERP, contato direto com transportadoras, registro de
+              ocorrências e extração de relatórios de KPIs.<br /><br />• Estadia
+              Inbound: análise de tempo de permanência de veículos vs.
+              programado, validação e aprovação de relatórios.<br /><br />•
+              Programação Inbound: apoio no agendamento de veículos em portais
+              de fornecedores e follow-up de SLA semanal.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h3 class="timeline-role">Alimentador de linha de produção</h3>
+            <div class="timeline-company">LY do brasil</div>
+            <div class="timeline-period">Maio 2023 - Setembro 2023</div>
+            <p class="timeline-description">
+              • Limpeza automática e manual de moldes de máquinas de pneus,
+              controle de robôs de limpeza e check-up de processos.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h3 class="timeline-role">Assistente de logística</h3>
+            <div class="timeline-company">J&T express</div>
+            <div class="timeline-period">Outubro 2022 - Dezembro 2022</div>
+            <p class="timeline-description">
+              • Expedição e Recebimento: separação, conferência e bipagem de
+              encomendas, elaboração de romaneios,
+              carregamento/descarregamento.<br /><br />• Roterização de
+              encomendas e monitoramento de entregas last-mile.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h3 class="timeline-role">Auxiliar de logística</h3>
+            <div class="timeline-company">Shopee</div>
+            <div class="timeline-period">Março 2022 - Setembro 2022</div>
+            <p class="timeline-description">
+              • Recebimento e conferência de produtos, bipagem no ERP, montagem
+              de paletes e organização por destino (FIFO).<br /><br />•
+              Expedição: apoio no carregamento/descarregamento, emissão de
+              romaneios, controle de qualidade e gestão de produtos
+              avariados/devolvidos.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-
     <section id="certificates" class="section">
-        <div class="section-header">
-            <div class="section-badge">Certificações Profissionais</div>
-            <h2 class="section-title">Certificações</h2>
-            <p class="section-description">Certificações técnicas de organizações renomadas</p>
+      <div class="section-header">
+        <div class="section-badge">Certificações Profissionais</div>
+        <h2 class="section-title">Certificações</h2>
+        <p class="section-description">
+          Certificações técnicas de organizações renomadas
+        </p>
+      </div>
+      <div class="certificates-grid">
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">
+            Python do Zero ao Avançado + projetos Reais
+          </h3>
+          <div class="certificate-institution">Udemy</div>
+          <div class="certificate-date">2024</div>
         </div>
-        <div class="certificates-grid">
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Python do Zero ao Avançado + projetos Reais</h3>
-                <div class="certificate-institution">Udemy</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Power automate desktop - RPA para iniciantes</h3>
-                <div class="certificate-institution">Udemy</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Fundamentos da ciência de dados</h3>
-                <div class="certificate-institution">FM2S</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Fundamentos de Gestão de Logística</h3>
-                <div class="certificate-institution">FM2S</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Curso de inteligencia artificial AI</h3>
-                <div class="certificate-institution">Udemy</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Governança de ti</h3>
-                <div class="certificate-institution">Udemy</div>
-                <div class="certificate-date">2024</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Fundamentos de TI: Hardware e Software</h3>
-                <div class="certificate-institution">Fundação Bradesco</div>
-                <div class="certificate-date">2025</div>
-            </div>
-            <div class="certificate-card reveal">
-                <h3 class="certificate-title">Fundamentos de gestão e liderança</h3>
-                <div class="certificate-institution">FM2S</div>
-                <div class="certificate-date">2024</div>
-            </div>
-
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">
+            Power automate desktop - RPA para iniciantes
+          </h3>
+          <div class="certificate-institution">Udemy</div>
+          <div class="certificate-date">2024</div>
         </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">Fundamentos da ciência de dados</h3>
+          <div class="certificate-institution">FM2S</div>
+          <div class="certificate-date">2024</div>
+        </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">Fundamentos de Gestão de Logística</h3>
+          <div class="certificate-institution">FM2S</div>
+          <div class="certificate-date">2024</div>
+        </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">Curso de inteligencia artificial AI</h3>
+          <div class="certificate-institution">Udemy</div>
+          <div class="certificate-date">2024</div>
+        </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">Governança de ti</h3>
+          <div class="certificate-institution">Udemy</div>
+          <div class="certificate-date">2024</div>
+        </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">
+            Fundamentos de TI: Hardware e Software
+          </h3>
+          <div class="certificate-institution">Fundação Bradesco</div>
+          <div class="certificate-date">2025</div>
+        </div>
+        <div class="certificate-card reveal">
+          <h3 class="certificate-title">Fundamentos de gestão e liderança</h3>
+          <div class="certificate-institution">FM2S</div>
+          <div class="certificate-date">2024</div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="section-header">
-            <div class="section-badge"> informações para Contatos</div>
-            <h2 class="section-title">Vamos Conversar</h2>
-            <p class="section-description">Pronto para discutir oportunidades de Trabalho, projetos desafiadores e
-                colaborações. Sinta-se à vontade para entrar em contato!</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <a href="mailto:jeanleonardo794@gmail.com" class="contact-item reveal" id="contactEmail">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Email Executivo</h4>
-                        <p id="emailAddress">jeanleoardo794@gmail.com</p>
-                    </div>
-                </a>
-                <a href="tel:+5511999999999" class="contact-item reveal" id="contactPhone">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Telefone Corporativo</h4>
-                        <p id="phoneNumber">+55 19 99964-3389</p>
-                    </div>
-                </a>
-                <a href="https://linkedin.com/in/jean-leonardo/" target="_blank" rel="noopener noreferrer"
-                    class="contact-item reveal" id="contactLinkedIn">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h4>LinkedIn Executivo</h4>
-                        <p id="linkedinProfile">linkedin.com/in/jean-leonardo</p>
-                    </div>
-                </a>
-                <a href="https://github.com/jeanleonardo" target="_blank" rel="noopener noreferrer"
-                    class="contact-item reveal" id="contactGitHub">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h4>GitHub Profissional</h4>
-                        <p id="githubProfile">github.com/jeanleonardo</p>
-                    </div>
-                </a>
+      <div class="section-header">
+        <div class="section-badge">Informações para Contato</div>
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p class="section-description">
+          Pronto para discutir oportunidades de Trabalho, projetos desafiadores
+          e colaborações. Sinta-se à vontade para entrar em contato!
+        </p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <a
+            href="mailto:jeanleonardo794@gmail.com"
+            class="contact-item reveal"
+            id="contactEmail"
+          >
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
             </div>
-            <div class="contact-form reveal">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Nome</label>
-                        <input type="text" id="name" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" id="email" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="subject">Assunto</label>
-                        <input type="text" id="subject" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="message">Mensagem</label>
-                        <textarea id="message" class="form-textarea" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="form-button">Enviar Mensagem</button>
-                </form>
+            <div class="contact-details">
+              <h4>Email Executivo</h4>
+              <p id="emailAddress">jeanleonardo794@gmail.com</p>
             </div>
+          </a>
+          <a
+            href="https://wa.me/5519999643389"
+            target="_blank"
+            class="contact-item reveal"
+            id="contactPhone"
+          >
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>WhatsApp</h4>
+              <p id="phoneNumber">+55 19 99964-3389</p>
+            </div>
+          </a>
+          <a
+            href="https://linkedin.com/in/jean-leonardo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item reveal"
+            id="contactLinkedIn"
+          >
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p id="linkedinProfile">linkedin.com/in/jean-leonardo</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/jeanleonardo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-item reveal"
+            id="contactGitHub"
+          >
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <p id="githubProfile">github.com/jeanleonardo</p>
+            </div>
+          </a>
         </div>
+        <div class="contact-form reveal">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">Nome</label
+              ><input type="text" id="name" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label
+              ><input type="email" id="email" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Assunto</label
+              ><input type="text" id="subject" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Mensagem</label
+              ><textarea
+                id="message"
+                class="form-textarea"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="form-button">Enviar Mensagem</button>
+          </form>
+          <div id="formFeedback" class="form-feedback"></div>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
 
-
-    <footer class="py-4 bg-gray text-center">
-        <div class="container">
-            <p class="mb-0">© 2025 Jean Leonardo. Todos os direitos reservados.</p>
-        </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2025 Jean Leonardo. Todos os direitos reservados.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+          ↑
+        </button>
+      </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
