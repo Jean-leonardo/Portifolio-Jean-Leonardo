@@ -129,7 +129,6 @@ document
     });
   });
 
-// Atualiza informações de contato (telefone já é WhatsApp)
 document
   .getElementById("contactPhone")
   .setAttribute("href", "https://wa.me/5519999643389");
